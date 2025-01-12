@@ -1,0 +1,8 @@
+require "modules.plugins"
+require "modules.colorscheme"
+require "modules.telescope_setup"
+require "modules.treesitter"
+require "modules.lsp"
+require "modules.statusline"
+require "modules.misc-setups"
+require "modules.formatting"

@@ -105,6 +105,7 @@ autocmd("FileType", {
     vim.api.nvim_buf_set_keymap(0, "n", "<C-c>", ":vsplit<CR>:te python3 '%'<CR>i", opts)
   end,
 })
+
 autocmd("FileType", {
   pattern = "cpp",
   callback = function()
