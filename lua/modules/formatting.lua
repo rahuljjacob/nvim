@@ -2,12 +2,11 @@ require("conform").setup {
   event = { "BufReadPre" },
   formatters_by_ft = {
     lua = { "stylua" },
-    -- Conform will run multiple formatters sequentially
-    python = {},
-    -- You can customize some of the format options for the filetype (:help conform.format)
-    rust = {},
-    -- Conform will run the first available formatter
+    -- python = { "ruff" },
     cpp = { "clang-format" },
+    c = { "clang-format" },
+    javascript = { "prettier" },
+    typescript = { "prettier" },
   },
 }
 

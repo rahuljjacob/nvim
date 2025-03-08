@@ -113,7 +113,8 @@ autocmd("FileType", {
       0,
       "n",
       "<C-c>",
-      ":split<CR>:te g++ -std=c++23 -Wshadow -Wall -Weffc++ -Wextra -Wconversion -Wsign-conversion -Werror -o %:t:r % -g -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG && ./%:t:r<CR>i",
+      ":vsplit<CR>:te g++ -std=c++23 -o %:t:r % && ./%:t:r<CR>i",
+      -- :split<CR>:te g++ -std=c++23 -Wshadow -Wall -Weffc++ -Wextra -Wconversion -Wsign-conversion -Werror -o %:t:r % -g -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG && ./%:t:r<CR>i
       opts
     )
   end,
