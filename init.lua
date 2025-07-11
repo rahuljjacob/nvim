@@ -1,2 +1,2 @@
-require "core"
-require "modules"
+require("rahul.core")
+require("rahul.lazy")
